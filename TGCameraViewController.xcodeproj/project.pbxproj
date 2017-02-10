@@ -213,12 +213,12 @@
 				TargetAttributes = {
 					A388D77B1D3FC86D00BBB49A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Y4SG6NS2UK;
+						DevelopmentTeam = GTECCMJC5W;
 						LastSwiftMigration = 0800;
 					};
 					F82F8E8019C4EFE700A47148 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = Y4SG6NS2UK;
+						DevelopmentTeam = GTECCMJC5W;
 					};
 				};
 			};

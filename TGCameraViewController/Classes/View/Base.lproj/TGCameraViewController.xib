@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -35,7 +34,7 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dit-c7-IZk" userLabel="Top View">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="0mu-lN-Lkb"/>
                     </constraints>
@@ -129,6 +128,7 @@
                                 <constraint firstAttribute="height" constant="40" id="Aub-V9-12O"/>
                                 <constraint firstAttribute="width" constant="50" id="ivk-GF-mOZ"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="CameraGrid"/>
                             <connections>
                                 <action selector="gridTapped" destination="-1" eventType="touchUpInside" id="6m1-BO-Ve2"/>
@@ -140,6 +140,7 @@
                                 <constraint firstAttribute="width" constant="50" id="6Yw-v5-k8c"/>
                                 <constraint firstAttribute="height" constant="40" id="XBx-hh-hmO"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="CameraToggle"/>
                             <connections>
                                 <action selector="toggleTapped" destination="-1" eventType="touchUpInside" id="cnq-8L-ak1"/>
@@ -151,13 +152,14 @@
                                 <constraint firstAttribute="width" constant="50" id="6QJ-EO-jQZ"/>
                                 <constraint firstAttribute="height" constant="40" id="iqh-0F-jLz"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="CameraFlashAuto"/>
                             <connections>
                                 <action selector="flashTapped" destination="-1" eventType="touchUpInside" id="yzx-f1-HjP"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="p7O-pE-Mp0" firstAttribute="leading" secondItem="WJG-N5-BnZ" secondAttribute="trailing" constant="63" id="1q8-DG-v1g"/>
                         <constraint firstItem="WJG-N5-BnZ" firstAttribute="leading" secondItem="Nol-dD-ETh" secondAttribute="trailing" constant="63" id="41d-NA-H1H"/>
@@ -177,6 +179,7 @@
                                 <constraint firstAttribute="height" constant="80" id="cgU-fk-MtB"/>
                                 <constraint firstAttribute="width" constant="80" id="xhg-SH-0Q3"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="CameraClose"/>
                             <connections>
                                 <action selector="closeTapped" destination="-1" eventType="touchUpInside" id="mp3-Tj-Kz0"/>
@@ -188,6 +191,7 @@
                                 <constraint firstAttribute="width" constant="78" id="HAC-kq-tli"/>
                                 <constraint firstAttribute="height" constant="78" id="Hud-wO-9uR"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="CameraShot"/>
                             <connections>
                                 <action selector="shotTapped" destination="-1" eventType="touchUpInside" id="XqW-0H-DD4"/>
@@ -199,13 +203,14 @@
                                 <constraint firstAttribute="height" constant="80" id="Qit-id-URc"/>
                                 <constraint firstAttribute="width" constant="80" id="twe-nl-2AZ"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <state key="normal" image="CameraRoll"/>
                             <connections>
                                 <action selector="albumTapped" destination="-1" eventType="touchUpInside" id="yg4-oc-gjO"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="centerY" secondItem="wtQ-Dg-G3i" secondAttribute="centerY" id="02I-TO-eyD"/>
                         <constraint firstAttribute="centerY" secondItem="O3k-MF-E1l" secondAttribute="centerY" id="AlZ-MU-XJk"/>
