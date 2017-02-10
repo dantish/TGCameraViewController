@@ -163,7 +163,7 @@
         _topLeftView.hidden =
         _topRightView.hidden =
         _bottomLeftView.hidden =
-        _bottomRightView.hidden = NO;
+        _bottomRightView.hidden = YES;
         
         _actionsView.hidden = NO;
         

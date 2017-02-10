@@ -65,12 +65,16 @@
                                 <constraint firstAttribute="width" constant="80" id="U0J-UF-VKM"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <state key="normal" image="CameraFlashAuto"/>
+                            <state key="normal" image="CameraFlashAuto">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                         </button>
                         <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8O-nu-6Iw" userLabel="Shot" customClass="TGTintedButton">
                             <rect key="frame" x="261" y="11" width="78" height="78"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <state key="normal" image="CameraShot"/>
+                            <state key="normal" image="CameraShot">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-5V-ufC" userLabel="Close" customClass="TGTintedButton">
                             <rect key="frame" x="8" y="10" width="80" height="80"/>

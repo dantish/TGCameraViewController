@@ -29,5 +29,6 @@
 
 + (void)setTintColor:(UIColor *)tintColor;
 + (UIColor *)tintColor;
++ (UIColor *)offColor;
 
 @end

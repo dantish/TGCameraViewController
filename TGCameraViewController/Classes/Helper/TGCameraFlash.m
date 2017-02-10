@@ -89,7 +89,7 @@ UIImage *UIImageFromAVCaptureFlashMode(AVCaptureFlashMode mode)
 
 UIColor *TintColorFromAVCaptureFlashMode(AVCaptureFlashMode mode)
 {
-    NSArray *array = @[[UIColor grayColor], [TGCameraColor tintColor], [TGCameraColor tintColor]];
+    NSArray *array = @[[TGCameraColor offColor], [TGCameraColor tintColor], [TGCameraColor tintColor]];
     UIColor *color = [array objectAtIndex:mode];
     return color;
 }

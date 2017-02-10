@@ -76,7 +76,6 @@ static NSString* const kTGCacheVignetteKey = @"TGCacheVignetteKey";
 + (instancetype)newWithDelegate:(id<TGCameraDelegate>)delegate photo:(UIImage *)photo
 {
     TGPhotoViewController *viewController = [TGPhotoViewController newController];
-    
     if (viewController) {
         viewController.delegate = delegate;
         viewController.photo = photo;
@@ -105,8 +104,7 @@ static NSString* const kTGCacheVignetteKey = @"TGCacheVignetteKey";
     if ([[TGCamera getOption:kTGCameraOptionHiddenFilterButton] boolValue] == YES) {
         _filterWandButton.hidden = YES;
     }
-    
-    [self addDetailViewToButton:_defaultFilterButton];
+	[self addDetailViewToButton:_defaultFilterButton];
 }
 
 - (void)didReceiveMemoryWarning
