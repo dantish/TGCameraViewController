@@ -61,8 +61,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jH3-dv-6EG" userLabel="Info View">
                     <rect key="frame" x="145" y="164" width="310" height="272"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE ALLOW PHOTO ACCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvw-Fr-fLT" userLabel="Title Label" customClass="TGTintedLabel">
-                            <rect key="frame" x="8" y="8" width="294" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE ALLOW CAMERA ACCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvw-Fr-fLT" userLabel="Title Label" customClass="TGTintedLabel">
+                            <rect key="frame" x="2" y="8" width="306" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="294" id="Jah-ld-hWN"/>
                                 <constraint firstAttribute="height" constant="22" id="h9G-E2-7b8"/>
@@ -70,9 +70,14 @@
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Jah-ld-hWN"/>
+                                </mask>
+                            </variation>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyE-Ee-LKC">
-                            <rect key="frame" x="5" y="153" width="300" height="30"/>
+                            <rect key="frame" x="5" y="183" width="300" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="300" id="I73-bY-fDb"/>
                                 <constraint firstAttribute="height" constant="30" id="eDt-LT-P72"/>
@@ -85,11 +90,11 @@
                                 <action selector="clickMeTapped:" destination="-1" eventType="touchUpInside" id="0M8-7C-Fx6"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows you to share photos on EatOpine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="244" translatesAutoresizingMaskIntoConstraints="NO" id="52v-Pz-Qrc" userLabel="Subtitle Label" customClass="TGTintedLabel">
-                            <rect key="frame" x="8" y="38" width="294" height="65"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Update Settings and enable Camera access to share your photos on EatOpine." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="244" translatesAutoresizingMaskIntoConstraints="NO" id="52v-Pz-Qrc" userLabel="Subtitle Label" customClass="TGTintedLabel">
+                            <rect key="frame" x="8" y="38" width="294" height="95"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="294" id="ihB-Xu-j5R"/>
-                                <constraint firstAttribute="height" constant="65" id="nti-Wg-enw"/>
+                                <constraint firstAttribute="height" constant="95" id="nti-Wg-enw"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

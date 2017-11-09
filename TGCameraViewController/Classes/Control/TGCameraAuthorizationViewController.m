@@ -61,7 +61,7 @@
     NSString *prefLanguage = [NSLocale preferredLanguages][0];
     if ([prefLanguage rangeOfString:@"it"].location != NSNotFound) {
         _titleLabel.text = @"Consenti L’accesso alle foto";
-        _subtitleLabel.text = @"Clicca sul bottone sottostante per consentire a EatOpine di usare la fotocamera.";
+        _subtitleLabel.text = @"Clicca sul bottone sottostante per accedere alle impostazioni. Poi abita la fotocamera per consentire ad EatOpine di utilizzarla";
         [_updateSettingsBtn setTitle:@"Aggiorna le impostazioni" forState:UIControlStateNormal];
     }
     else {
