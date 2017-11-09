@@ -7,7 +7,7 @@
 */
 
 "TGCameraViewController-Title" = "PLEASE ALLOW PHOTO ACCESS";
-"TGCameraViewController-Subtitle" = "Tap Update Settings to allow you to share your photos on Eatopine";
+"TGCameraViewController-Subtitle" = "Tap Update Settings to allow you to share your photos on EatOpine";
 "TGCameraViewController-Step1" = "1. Open the Settings of your device";
 "TGCameraViewController-Step2" = "2. Go to Privacy";
 "TGCameraViewController-Step3" = "3. Go the Camera";
