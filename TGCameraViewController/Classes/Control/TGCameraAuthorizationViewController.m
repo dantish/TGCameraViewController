@@ -35,6 +35,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *step3Label;
 @property (weak, nonatomic) IBOutlet UILabel *step4Label;
 
+@property (strong, nonatomic) IBOutlet UIButton *updateSettingsBtn;
+
+
 - (IBAction)closeTapped;
 
 @end
@@ -51,13 +54,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    //  For some reason, localization doesn't seem to work correctly for this pod
+    //  just stick the strings in here for now
     
-    _titleLabel.text = TGLocalizedString(@"TGCameraViewController-Title");
-    _subtitleLabel.text = TGLocalizedString(@"TGCameraViewController-Subtitle");
-    _step1Label.text = TGLocalizedString(@"TGCameraViewController-Step1");
-    _step2Label.text = TGLocalizedString(@"TGCameraViewController-Step2");
-    _step3Label.text = TGLocalizedString(@"TGCameraViewController-Step3");
-    _step4Label.text = TGLocalizedString(@"TGCameraViewController-Step4");
+    NSString *prefLanguage = [NSLocale preferredLanguages][0];
+    if ([prefLanguage rangeOfString:@"it"].location != NSNotFound) {
+        _titleLabel.text = @"Consenti L’accesso alle foto";
+        _subtitleLabel.text = @"Clicca sul bottone sottostante per consentire a EatOpine di usare la fotocamera.";
+        [_updateSettingsBtn setTitle:@"Aggiorna le impostazioni" forState:UIControlStateNormal];
+    }
+    else {
+        //_titleLabel.text = TGLocalizedString(@"TGCameraViewController-Title");
+        //_subtitleLabel.text = TGLocalizedString(@"TGCameraViewController-Subtitle");
+    }
+
 }
 
 - (BOOL)prefersStatusBarHidden

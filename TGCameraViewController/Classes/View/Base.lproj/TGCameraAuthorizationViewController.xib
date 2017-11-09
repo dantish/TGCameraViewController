@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="subtitleLabel" destination="52v-Pz-Qrc" id="JkH-yJ-WYf"/>
                 <outlet property="titleLabel" destination="Lvw-Fr-fLT" id="AwU-Yj-NxI"/>
+                <outlet property="updateSettingsBtn" destination="PyE-Ee-LKC" id="SX5-Q4-yZt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -70,20 +71,10 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows you to share photos on Eatopine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="244" translatesAutoresizingMaskIntoConstraints="NO" id="52v-Pz-Qrc" userLabel="Subtitle Label" customClass="TGTintedLabel">
-                            <rect key="frame" x="8" y="38" width="294" height="65"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="294" id="ihB-Xu-j5R"/>
-                                <constraint firstAttribute="height" constant="65" id="nti-Wg-enw"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyE-Ee-LKC">
-                            <rect key="frame" x="55" y="153" width="200" height="30"/>
+                            <rect key="frame" x="5" y="153" width="300" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="200" id="I73-bY-fDb"/>
+                                <constraint firstAttribute="width" constant="300" id="I73-bY-fDb"/>
                                 <constraint firstAttribute="height" constant="30" id="eDt-LT-P72"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
@@ -94,6 +85,16 @@
                                 <action selector="clickMeTapped:" destination="-1" eventType="touchUpInside" id="0M8-7C-Fx6"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows you to share photos on EatOpine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="244" translatesAutoresizingMaskIntoConstraints="NO" id="52v-Pz-Qrc" userLabel="Subtitle Label" customClass="TGTintedLabel">
+                            <rect key="frame" x="8" y="38" width="294" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="294" id="ihB-Xu-j5R"/>
+                                <constraint firstAttribute="height" constant="65" id="nti-Wg-enw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="Lvw-Fr-fLT" firstAttribute="centerX" secondItem="jH3-dv-6EG" secondAttribute="centerX" id="8LH-UN-PCa"/>
