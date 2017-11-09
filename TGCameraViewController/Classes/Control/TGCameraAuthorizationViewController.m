@@ -73,4 +73,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)clickMeTapped:(id)sender {
+    NSLog(@"Clicked!");
+
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+
+}
+
+
 @end

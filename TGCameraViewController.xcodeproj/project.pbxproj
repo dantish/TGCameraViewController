@@ -218,7 +218,7 @@
 					};
 					F82F8E8019C4EFE700A47148 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = GTECCMJC5W;
+						DevelopmentTeam = X27K547NRA;
 					};
 				};
 			};
