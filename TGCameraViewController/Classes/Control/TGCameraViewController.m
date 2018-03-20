@@ -25,11 +25,12 @@
 
 #import "TGCameraViewController.h"
 #import "TGPhotoViewController.h"
+#import "TOCropViewController.h"
 #import "TGCameraSlideView.h"
 #import "TGTintedButton.h"
 
 
-@interface TGCameraViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface TGCameraViewController () <UIImagePickerControllerDelegate, TOCropViewControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *captureView;
 @property (strong, nonatomic) IBOutlet UIImageView *topLeftView;
@@ -205,16 +206,29 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *photo = [TGAlbum imageWithMediaInfo:info];
+    TOCropViewController *viewController = [[TOCropViewController alloc] initWithImage:photo];
+    viewController.delegate = self;
     
-    TGPhotoViewController *viewController = [TGPhotoViewController newWithDelegate:_delegate photo:photo];
-    [viewController setAlbumPhoto:YES];
-    [self.navigationController pushViewController:viewController animated:NO];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [picker presentViewController:viewController animated:YES completion:nil];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -
+#pragma mark - TOCropViewControllerDelegate
+
+- (void)cropViewController:(TOCropViewController *)cropViewController didFinishCancelled:(BOOL)cancelled {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)cropViewController:(TOCropViewController *)cropViewController didCropToImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle {
+    TGPhotoViewController *viewController = [TGPhotoViewController newWithDelegate:_delegate photo:image];
+    [viewController setAlbumPhoto:YES];
+    [self.navigationController pushViewController:viewController animated:NO];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
