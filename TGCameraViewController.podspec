@@ -16,4 +16,6 @@ Pod::Spec.new do |s|
   s.source_files = 'TGCameraViewController/**/*.{h,m}'
   s.resources = ['TGCameraViewController/**/*.xib', 'TGCameraViewController/**/*.xcassets', 'TGCameraViewController/Resources/TGCameraViewController.bundle']
   s.source = { :git => 'https://github.com/tdginternet/TGCameraViewController.git', :tag => s.version }  
+
+  s.dependency 'TOCropViewController'
 end
