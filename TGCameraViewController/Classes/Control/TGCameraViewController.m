@@ -207,6 +207,9 @@
 {
     UIImage *photo = [TGAlbum imageWithMediaInfo:info];
     TOCropViewController *viewController = [[TOCropViewController alloc] initWithImage:photo];
+    viewController.aspectRatioPreset = TOCropViewControllerAspectRatioPresetSquare;
+    viewController.aspectRatioLockEnabled = YES;
+    viewController.resetAspectRatioEnabled = NO;
     viewController.delegate = self;
     
     [picker presentViewController:viewController animated:YES completion:nil];
