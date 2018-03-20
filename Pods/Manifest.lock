@@ -1,16 +1,19 @@
 PODS:
   - TGCameraViewController (2.2.8)
+  - TOCropViewController (2.3.6)
 
 DEPENDENCIES:
   - TGCameraViewController (from `./`)
+  - TOCropViewController
 
 EXTERNAL SOURCES:
   TGCameraViewController:
-    :path: "./"
+    :path: ./
 
 SPEC CHECKSUMS:
-  TGCameraViewController: '0768b534800e6136e70dd3cc5aafe1310b448480'
+  TGCameraViewController: 401f23c3def68f3d8a2627faba3dbdc23bce1bee
+  TOCropViewController: 6d972f2c609372312648f96758e13a7f689efbc0
 
-PODFILE CHECKSUM: 3f839a55f743d5cb1cc5caac0fda42b49ec44660
+PODFILE CHECKSUM: f9d769812e5bfd981adb75ed71598a92a6f80f50
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0
